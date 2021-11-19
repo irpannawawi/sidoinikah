@@ -94,15 +94,15 @@ define('SITE_NAME', 'Si Doi Nikah'); ///NAMA WEBSITE
 
 // =========== development mode ============
 // //LINK DOMAIN WITH URL
-define('SITE_UTAMA', 'http://home.localhost:8080'); 
-define('SITE_UNDANGAN', 'http://undangan.localhost:8080');
-define('SITE_ADMIN', 'http://admin.localhost:8080');
+define('SITE_UTAMA', 'http://home.nawawisoft.xyz'); 
+define('SITE_UNDANGAN', 'http://undangan.nawawisoft.xyz');
+define('SITE_ADMIN', 'http://admin.nawawisoft.xyz');
 
 //DOMAIN ONLY
-define('DOMAIN_UTAMA', 'home.localhost:8080');
-define('DOMAIN_UTAMA_WWW', 'home.localhost:8080');
-define('DOMAIN_UNDANGAN', 'undangan.localhost:8080');
-define('DOMAIN_ADMIN', 'admin.localhost:8080');
+define('DOMAIN_UTAMA', 'home.nawawisoft.xyz');
+define('DOMAIN_UTAMA_WWW', 'home.nawawisoft.xyz');
+define('DOMAIN_UNDANGAN', 'undangan.nawawisoft.xyz');
+define('DOMAIN_ADMIN', 'admin.nawawisoft.xyz');
 
 
 //base url dinamis
