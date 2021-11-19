@@ -83,7 +83,19 @@ class UndanganModel extends Model
         $builder->select('*');
         $builder->join('themes', 'themes.id = order.theme', 'left');
         $builder->where('order.id_user', $id);
+        $builder->where('order.status', 1);
         return $builder->get();
+    }
+
+    public function cek_order($domain){
+        $builder = $this->db->table('order');
+        $builder->where('domain',$domain);
+        $builder->where('status',1);
+        if($builder->countAllResults() >= 1){
+            return True;
+        }else{
+            return False;
+        }
     }
 
     public function get_all_themes(){
@@ -101,4 +113,5 @@ class UndanganModel extends Model
     public function insert_traffic($data){
     	return $this->pengunjung->insert($data);
     }
+
 } 

@@ -18,6 +18,13 @@ class Undangan extends Controller
         $this->session = session();
 		$request = \Config\Services::request(); //memanggil class request
 		$this->uri = $request->uri; //class request digunakan untuk request uri/url
+		$web = $this->uri->getSegment(2); //memabaca domain user
+		$cek_order = $this->UndanganModel->cek_order($web);
+		if(!$cek_order){
+			echo "Website belum aktif";die;
+		}
+
+
     }
 
 	public function index()

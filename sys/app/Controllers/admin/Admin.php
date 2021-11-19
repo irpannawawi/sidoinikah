@@ -15,6 +15,11 @@ class Admin extends Controller
         // $this->session->set('id_admin','1');
     }
 
+    public function generate_password(){
+        $pass = "admin";
+        echo md5($pass);
+    } 
+
     public function index()
     {
         echo 'URL Tidak Valid / Kurang Lengkap';
@@ -80,7 +85,7 @@ class Admin extends Controller
 
     public function do_hapus_user(){
 
-        $id = $this->request->getPost('id');
+        $id = 16;//$this->request->getPost('id');
 
         $delete = $this->AdminModel->delete_user($id);
         if($delete){

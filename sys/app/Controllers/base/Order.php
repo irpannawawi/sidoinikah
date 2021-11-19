@@ -579,7 +579,7 @@ class Order extends Controller
 	 		'id_user' => $id_user,
 	 		'domain' => $domain,
 	 		'theme' => $theme,
-	 		'status' => '1'
+	 		'status' => '0'
 
 	 	];
 

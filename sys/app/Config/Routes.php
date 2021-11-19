@@ -35,8 +35,11 @@ if(isset($_SERVER['HTTP_HOST'])){
 	$routes->add('admin/pembayaran', 'Admin::pembayaran');
 	$routes->add('admin/profil', 'Admin::profil');
 	$routes->add('admin/setting', 'Admin::setting');
+	$routes->get('/', 'Admin::login');
 	$routes->get('login', 'Admin::login');
 	$routes->add('admin/edit_pengguna', 'Admin::edit_pengguna');
+	$routes->get('/generate', 'Admin::generate_password');
+	$routes->get('admin/pengguna', 'Admin::pengguna');
 
 	$routes->add('logout', 'Admin::do_unauth');
 	$routes->post('do_auth', 'Admin::do_auth');
@@ -44,6 +47,7 @@ if(isset($_SERVER['HTTP_HOST'])){
 	$routes->post('admin/update_admin', 'Admin::do_update_admin');
 	$routes->post('admin/konfirmasi', 'Admin::do_konfirmasi');
 	$routes->post('admin/hapus_user', 'Admin::do_hapus_user');
+	$routes->get('admin/hapus_user', 'Admin::do_hapus_user');
 	$routes->post('admin/update_fitur', 'Admin::do_update_fitur');
 	$routes->post('admin/update_domain', 'Admin::do_update_domain');
 	$routes->post('admin/update_foto_mempelai', 'Admin::do_update_foto_mempelai');
