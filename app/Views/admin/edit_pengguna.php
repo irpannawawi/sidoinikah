@@ -403,7 +403,7 @@
                 <div class="card-body">
                     <div class="form-group">
                     <label>Nama Domain / URL Undangan</label>
-                    <label style="bottom: -12.3px;position: inherit;padding-left: 15px;color: #005CAA;font-weight: bold;display: table;margin-bottom: -2.1rem;">undangan.sidoinikah.xyz/</label>
+                    <label style="bottom: -12.3px;position: inherit;padding-left: 15px;color: #005CAA;font-weight: bold;display: table;margin-bottom: -2.1rem;">undangan.sidoinikah.my.id/</label>
                     <input id="domain" type="text" class="form-control" placeholder="akudandia" style="padding-left: 200px;" value="<?= $order[0]->domain ?>"  onkeyup="nospaces(this)" required>
                     </div>
 

@@ -62,7 +62,7 @@
                     <div class="form-group">
                         <label>Nama Domain / URL Undangan</label>
                         <div class="upload-area-bg" style="margin-top: 5px;text-align: center;background: #f1f2f6;">
-                            <a style="font-size: 16px;text-transform: uppercase;color: #007bff;" >undangan.sidoinikah.xyz/<?= $order[0]->domain ?></a>
+                            <a style="font-size: 16px;text-transform: uppercase;color: #007bff;" >undangan.sidoinikah.my.id/<?= $order[0]->domain ?></a>
                         </div>
                     </div>
 
