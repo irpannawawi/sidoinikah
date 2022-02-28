@@ -127,6 +127,9 @@ if(isset($_SERVER['HTTP_HOST'])){
 
 
 	//REDIRECT SEMUA ROUTES TIDAK DIKENAL KE HOME
+	$routes->get('terms', function(){
+		return view('terms');
+	});
 	$routes->add('(:any)', 'Beranda');
 
 }
